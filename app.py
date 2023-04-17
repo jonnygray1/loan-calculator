@@ -57,7 +57,7 @@ def mnthlyPmt():
         monthlyLoanPayment = loan.getLoanPmt()
         formattedMonthlyPayment = "${0:,.2f}".format(monthlyLoanPayment)
 
-        # amortization schedule variables
+       # amortization schedule variables
         monthlyBeginningBalance = loan.getLoanAmount()
         totalInterestPaid = 0.0
         amoritzation = []
@@ -92,4 +92,4 @@ def mnthlyPmt():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=4000, debug=True)
+    app.run(host="0.0.0.0", port=4000, debug=True) 
